@@ -1,7 +1,7 @@
 import com.zsgs.maanavar.features.login.LoginView;
 
 public class MaanavarApp {
-    public static String version = "0.0.2";
+    public static String version = "1.0.5";
     public static void main(String[] args)
     {
         MaanavarApp maanavarApp = new MaanavarApp();

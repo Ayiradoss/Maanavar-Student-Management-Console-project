@@ -13,7 +13,8 @@ public class DashBoardController {
     public void handle(int choice) {
         if (choice == 1) {
             new ManageView().show();
-        } else {
+        }
+        else {
             System.exit(0);
         }
     }

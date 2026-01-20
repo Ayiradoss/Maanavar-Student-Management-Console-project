@@ -13,10 +13,12 @@ public class LoginModel {
     }
 
     public void validateCredentials(String userName, String userPassword) {
-        if(MaanavarDB.getInstance().isValidUser(userName, userPassword)) {
+        if(MaanavarDB.getInstance().isValidUser(userName, userPassword))
+        {
             loginController.onSuccessLogin();
         }
-        else {
+        else
+        {
             loginController.onLoginFailed();
         }
     }

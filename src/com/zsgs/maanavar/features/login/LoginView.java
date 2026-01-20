@@ -1,5 +1,6 @@
 package com.zsgs.maanavar.features.login;
 
+import com.zsgs.maanavar.features.student.StudentView;
 import com.zsgs.maanavar.features.updateCredentials.UpdateCredentialsView;
 
 import java.util.Scanner;
@@ -26,14 +27,16 @@ public class LoginView {
     }
 
     public void onSuccessLogin() {
-        UpdateCredentialsView updateCredentials = new UpdateCredentialsView();
-        updateCredentials.init();
+        System.out.println("Login successful!");
+
+        StudentView studentView = new StudentView();
+        studentView.init();
     }
+
 
     public void onLoginFailed() {
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Invalid username or password");
         System.out.println("Do you want to try again? Y/N?");
         String option = sc.next();
 

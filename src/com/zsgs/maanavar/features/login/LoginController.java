@@ -10,11 +10,14 @@ public class LoginController {
     }
 
     public void validateCredentials(String userName, String userPassword) {
+        loginModel.validateCredentials(userName, userPassword);
     }
 
     public void onSuccessLogin() {
+        loginView.onSuccessLogin();
     }
 
     public void onLoginFailed() {
+        loginView.onLoginFailed();
     }
 }

@@ -1,6 +1,9 @@
 package com.zsgs.maanavar.dto;
 
-public class StudentInfo {
+import com.zsgs.maanavar.features.student.StudentView;
+
+public class StudentInfo
+{
     private String studentId;
     private String studentName;
     private String department;
@@ -28,25 +31,19 @@ public class StudentInfo {
         return studentName;
     }
 
-    public void setStudentName(String studentName) {
-        this.studentName = studentName;
-    }
-
     public String getDepartment() {
         return department;
-    }
-
-    public void setDepartment(String department) {
-        this.department = department;
     }
 
     public int getYear() {
         return year;
     }
 
-    public void setYear(int year) {
-        this.year = year;
+    public void onSuccessLogin() {
+        StudentView studentView = new StudentView();
+        studentView.init();
     }
+
 
     @Override
     public String toString() {
